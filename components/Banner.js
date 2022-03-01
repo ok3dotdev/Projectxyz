@@ -6,7 +6,7 @@ const Banner = () => {
         <div>
             <h1 className={styles.title}>Hi, I'm Henry</h1>
             <p className={styles.description}>
-                I'm a web-developer based in Toronto, Canada.
+                A web-developer based in Toronto, Canada.
             </p>
             <div className={styles.button__container}>
                 <button className={styles.button}>Blog</button>
