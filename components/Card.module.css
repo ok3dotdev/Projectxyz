@@ -1,6 +1,5 @@
 .container {
     padding: 0;
-    background-color: lightblue;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
     border: 1px solid rgb(229, 232, 235);
@@ -34,5 +33,8 @@
         padding: 0;
         display: flex;
         flex-direction: column;
+    }
+    .Card_body {
+        padding-left: 1rem;
     }
 }
