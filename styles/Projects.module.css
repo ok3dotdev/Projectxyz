@@ -75,7 +75,7 @@
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         min-height: 1900px;
         padding: 0 1.4rem;
-        margin-top: 800px;
+        margin-top: 6rem;
     }
     .header {
         padding: 0.6rem 1rem;
