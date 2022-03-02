@@ -1,20 +1,10 @@
 import Link from "next/link";
-import styles from "../../styles/Projects.module.css";
-import Card from "../../components/Card";
+import styles from "../styles/Contact.module.css";
+
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-import { projectsData } from "../../data/index";
-
-export async function getStaticProps(context) {
-    return {
-        props: {
-            projects: projectsData
-        }
-    };
-}
-
-const Projects = (props) => {
+const Contact = () => {
     return (
         <div className={styles.container}>
             <header className={styles.header}>
@@ -26,15 +16,21 @@ const Projects = (props) => {
                         />
                     </a>
                 </Link>
-                <h1>Projects</h1>
+                <h1>Contact Me</h1>
             </header>
             <main className={styles.content}>
-                {props.projects.map((prj, idx) => {
-                    return <Card title={prj.name} summary={prj.summary} />;
-                })}
+                <h2 style={{ textAlign: "center" }}> 👋 Hello There!</h2>
+                <div></div>
+
+                <section className={styles.contact}>
+                    💡 Wanna get in Touch? You can contact me,
+                    <Link href="mailto:henryoke158@yahoo.com">
+                        <a className={styles.contactLink}>here</a>
+                    </Link>
+                </section>
             </main>
         </div>
     );
 };
 
-export default Projects;
+export default Contact;

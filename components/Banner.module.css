@@ -13,12 +13,21 @@
     margin: 0;
     line-height: 1.15;
     font-size: 4rem;
+    color: white;
 }
+/* .title::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    background-color: red;
+} */
 
 .description {
     margin: 0;
     line-height: 1.5;
     font-size: 1.5rem;
+    color: white;
 }
 
 .button__container {
@@ -27,4 +36,5 @@
 
 .button {
     margin-right: 0.5rem;
+    padding: 0.32rem 1rem;
 }

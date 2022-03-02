@@ -1,5 +1,6 @@
+import Link from "next/link";
 import React from "react";
-import styles from "../styles/Banner.module.css";
+import styles from "./Banner.module.css";
 
 const Banner = () => {
     return (
@@ -9,10 +10,26 @@ const Banner = () => {
                 A web-developer based in Toronto, Canada.
             </p>
             <div className={styles.button__container}>
-                <button className={styles.button}>Blog</button>
-                <button className={styles.button}>Projects</button>
-                <button className={styles.button}>About Me</button>
-                <button className={styles.button}>Contact</button>
+                <Link href="/blog">
+                    <a>
+                        <button className={styles.button}>Blog</button>
+                    </a>
+                </Link>
+                <Link href="/projects">
+                    <a>
+                        <button className={styles.button}>Projetcs</button>
+                    </a>
+                </Link>
+                <Link href="/about">
+                    <a>
+                        <button className={styles.button}>About Me</button>
+                    </a>
+                </Link>
+                <Link href="/contact">
+                    <a>
+                        <button className={styles.button}>Contact</button>
+                    </a>
+                </Link>
             </div>
         </div>
     );
