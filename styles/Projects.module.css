@@ -73,7 +73,17 @@
         width: 100%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        min-height: 1500px;
-        padding: 0 1.2rem;
+        min-height: 1900px;
+        padding: 0 1.4rem;
+    }
+    .header {
+        padding: 0.6rem 1rem;
+    }
+    .header > h1 {
+        font-size: 1.2rem;
+        margin-left: 0.7rem;
+    }
+    .header > svg {
+        font-size: 0.7rem;
     }
 }
