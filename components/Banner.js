@@ -1,6 +1,7 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./Banner.module.css";
+import { Head } from "next/head";
 import {
     faLinkedin,
     faGithub,
