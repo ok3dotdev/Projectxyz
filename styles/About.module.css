@@ -1,5 +1,4 @@
 .container {
-    padding: 1rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,6 +10,8 @@
 }
 
 .header {
+    padding: 1rem;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
     display: flex;
     align-items: center;
 }
@@ -46,11 +47,33 @@
 .contactLink {
     text-decoration: underline;
     color: purple;
+    margin-left: 0.3rem;
 }
 
 @media (min-width: 1500px) {
     .content {
         width: 30%;
         margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.6rem 1rem;
+    }
+    .header > h1 {
+        font-size: 1.2rem;
+        margin-left: 0.7rem;
+    }
+    .header > svg {
+        font-size: 0.7rem;
+    }
+    .content {
+        width: 85%;
+        text-align: justify;
+    }
+    .contact {
+        white-space: nowrap;
+        font-size: 0.8rem;
     }
 }

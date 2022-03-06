@@ -39,8 +39,7 @@ const About = () => {
                     value in my work and to my clients.
                 </p>
                 <section className={styles.contact}>
-                    {" "}
-                    💡 Wanna get in Touch? You can contact me,{" "}
+                    💡 Wanna get in Touch? You can contact me,
                     <Link href="mailto:henryoke158@yahoo.com">
                         <a className={styles.contactLink}>here</a>
                     </Link>

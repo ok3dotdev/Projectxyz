@@ -1,5 +1,4 @@
 .container {
-    padding: 1rem 5rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -7,6 +6,7 @@
 .header {
     display: flex;
     align-items: center;
+    padding: 1rem;
 }
 .header > h1 {
     display: inline;
@@ -50,5 +50,18 @@
     .content {
         width: 30%;
         margin-top: 1.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .header {
+        padding: 0.6rem 1rem;
+    }
+    .header > h1 {
+        font-size: 1.2rem;
+        margin-left: 0.7rem;
+    }
+    .header > svg {
+        font-size: 0.7rem;
     }
 }

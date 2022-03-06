@@ -5,7 +5,8 @@ import { Head } from "next/head";
 import {
     faLinkedin,
     faGithub,
-    faTwitter
+    faTwitter,
+    faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
@@ -40,7 +41,7 @@ const Banner = () => {
                 </Link>
             </div>
             <div className={styles.icons}>
-                <Link href="/">
+                <Link href="https://www.linkedin.com/in/henry-oke/">
                     <a>
                         <FontAwesomeIcon
                             icon={faLinkedin}
@@ -48,7 +49,7 @@ const Banner = () => {
                         />
                     </a>
                 </Link>
-                <Link href="/">
+                <Link href="https://github.com/sickerman">
                     <a>
                         <FontAwesomeIcon
                             icon={faGithub}
@@ -56,10 +57,10 @@ const Banner = () => {
                         />
                     </a>
                 </Link>
-                <Link href="/">
+                <Link href="#">
                     <a>
                         <FontAwesomeIcon
-                            icon={faTwitter}
+                            icon={faDiscord}
                             style={{ fontSize: "1.8rem" }}
                         />
                     </a>
