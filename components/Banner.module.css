@@ -12,7 +12,7 @@
 .title {
     margin: 0;
     line-height: 1.15;
-    font-size: 4rem;
+    font-size: clamp(32px, 6vmax, 72px);
     color: white;
 }
 /* .title::before {
@@ -32,9 +32,44 @@
 
 .button__container {
     padding: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
 
 .button {
     margin-right: 0.5rem;
     padding: 0.32rem 1rem;
+    color: white;
+    background-color: #353434;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    opacity: 0.75;
+    font-size: 1.2rem;
+    width: 100%;
+    margin-bottom: 0.5rem;
+    text-align: left;
+}
+.heroImg {
+    border-radius: 50%;
+    width: 3rem;
+    border: 2px solid blue;
+}
+.icons {
+    padding: 0 1.2rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    color: white;
+}
+
+@media (min-width: 1200px) {
+    .button {
+        margin-bottom: 0.5rem;
+        padding: 0.5rem 1rem;
+        text-align: left;
+    }
+    .icon {
+    }
 }
