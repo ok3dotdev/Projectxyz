@@ -19,11 +19,11 @@ const Banner = () => {
                 A web-developer based in Toronto, Canada.
             </p>
             <div className={styles.button__container}>
-                <Link href="/blog">
+                {/* <Link href="/blog">
                     <a>
                         <button className={styles.button}>📓 Blog</button>
                     </a>
-                </Link>
+                </Link> */}
                 <Link href="/projects">
                     <a>
                         <button className={styles.button}>💼 Projetcs</button>
