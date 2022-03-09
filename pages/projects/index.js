@@ -5,7 +5,7 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
-import { sanityClient } from "./../client";
+import { sanityClient } from "../../lib/sanity-client/client";
 // import { projectsData } from "../../data/index";
 
 export async function getStaticProps(context) {
