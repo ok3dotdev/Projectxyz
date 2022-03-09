@@ -1,5 +1,6 @@
 import styles from "./Card.module.css";
 import { useEffect, useState } from "react";
+import Image from "next/image";
 
 const Card = ({ title, description, img }) => {
 
@@ -7,7 +8,8 @@ const Card = ({ title, description, img }) => {
   return (
     <div className={styles.container}>
       <div className={styles.Card_image}>
-        <img src={img}/>
+          {/* <Image src={img} alt="Card Image"/> */}
+        <img src={img} alt="Card Image"/>
       </div>
       <div className={styles.Card_body}>
         <h3>{title}</h3>

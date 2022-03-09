@@ -44,7 +44,7 @@ const Projects = (props) => {
       }
     ));
     console.log(mappedProjects)
-  }, []);
+  }, [mappedProjects, props.projects]);
   return (
     <div className={styles.container}>
       <header className={styles.header}>

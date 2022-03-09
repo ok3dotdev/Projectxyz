@@ -9,11 +9,13 @@ import {
     faDiscord
 } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Image from "next/image";
 
 const Banner = () => {
     return (
         <div>
-            <img className={styles.heroImg} src="/assets/banner.jpeg" />
+            {/* <img className={styles.heroImg} src="/assets/banner.jpeg" alt="Hero Image"/> */}
+            <Image className={styles.heroImg} src="/assets/banner.jpeg" alt="Hero Image" width="50" height="50"/>
             <h1 className={styles.title}>Hi, I'm Henry</h1>
             <p className={styles.description}>
                 A web-developer based in Toronto, Canada.
