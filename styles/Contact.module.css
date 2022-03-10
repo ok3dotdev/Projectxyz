@@ -6,7 +6,12 @@
 .header {
     display: flex;
     align-items: center;
-    padding: 1rem;
+    width: 100%;
+    position: fixed;
+    background-color: white;
+    padding: 1rem 3rem;
+    top: 0;
+    box-shadow: rgb(4 17 29 / 25%) 0px 0px 8px 0px;
 }
 .header > h1 {
     display: inline;
@@ -18,32 +23,47 @@
 }
 
 .content {
-    width: 70%;
+    margin-top: 9rem;
     align-self: center;
-}
-.contact {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 1.5rem;
-    height: 4rem;
-    border-radius: 0.5rem;
+    padding: 0.2rem 1rem;
+    width: 40%;
+    height: 200px;
+    border-radius: 0.3rem;
     background: #00c9ff; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,
         #92fe9d,
         #00c9ff
     ); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(
-        to right,
-        #92fe9d,
-        #00c9ff
-    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #92fe9d, #00c9ff);
+}
+.contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 4rem;
+    border-radius: 0.5rem;
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.content > h2 {
+    margin-bottom: 0;
 }
 
 .contactLink {
     text-decoration: underline;
     color: purple;
+}
+.icons {
+    padding: 0 1.2rem;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 0;
+}
+.text > h3 {
+    margin: 0;
 }
 
 @media (min-width: 1500px) {
@@ -63,5 +83,12 @@
     }
     .header > svg {
         font-size: 0.7rem;
+    }
+    .content {
+        width: 90%;
+    }
+
+    .icons {
+        margin-left: 0.3rem;
     }
 }
