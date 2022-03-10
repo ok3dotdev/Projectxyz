@@ -5,23 +5,15 @@ import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
-import { sanityClient } from "../../lib/sanity-client/client";
+// import { sanityClient } from "../../lib/sanity-client/client";
+import { getprojectsData } from "../../lib/projectsData";
 // import { projectsData } from "../../data/index";
 
 export async function getStaticProps(context) {
-  const sanity = `*[_type == "projects"]{name,description,image}`;
-  const url = `https://xhim8nbd.api.sanity.io/v2021-06-07/data/query/production?query=${sanity}`;
-  let projectsData = "";
-
-  await fetch(url)
-    .then((res) => res.json())
-    .then((json) => (projectsData = json))
-    .then(() => console.log(projectsData.result[0].name));
-
-  console.log(projectsData);
+  const projectsData = await getprojectsData(); 
   return {
     props: {
-      projects: projectsData.result,
+      projects: projectsData,
     },
   };
 }
