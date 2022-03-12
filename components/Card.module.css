@@ -2,14 +2,13 @@
     padding: 0;
     border-radius: 0.5rem;
     margin-bottom: 1rem;
-    border: 1px ss  olid rgb(229, 232, 235);
+    border: 1px solid rgb(229, 232, 235);
 }
 .Card_image {
     width: 100%;
     border-top-left-radius: 0.5rem;
     border-top-right-radius: 0.5rem;
     border-bottom: 1px solid rgb(229, 232, 235);
-    min-height: 70%;
     background: #fc466b; /* fallback for old browsers */
     background: -webkit-linear-gradient(
         to right,

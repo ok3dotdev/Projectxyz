@@ -35,8 +35,8 @@ const Projects = (props) => {
         }
       }
     ));
-    console.log(mappedProjects)
-  }, [mappedProjects, props.projects]);
+    // console.log(mappedProjects)
+  }, []);
   return (
     <div className={styles.container}>
       <header className={styles.header}>
