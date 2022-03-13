@@ -3,10 +3,14 @@ import styles from "../styles/About.module.css";
 
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import Head from "next/head";
 
 const About = () => {
     return (
         <div className={styles.container}>
+            <Head>
+                <title>About me page</title>
+            </Head>
             <header className={styles.header}>
                 <Link href="/">
                     <a>

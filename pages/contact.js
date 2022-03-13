@@ -1,5 +1,6 @@
 import Link from "next/link";
 import styles from "../styles/Contact.module.css";
+import Head from "next/head";
 import {
   faLinkedin,
   faGithub,
@@ -12,6 +13,9 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 const Contact = () => {
   return (
     <div className={styles.container}>
+        <Head>
+            <title>Contact me page</title>
+        </Head>
       <header className={styles.header}>
         <Link href="/">
           <a>

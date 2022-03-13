@@ -7,6 +7,7 @@ import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
 // import { sanityClient } from "../../lib/sanity-client/client";
 import { getprojectsData } from "../../lib/projectsData";
+import Head from "next/head";
 // import { projectsData } from "../../data/index";
 
 export async function getStaticProps(context) {
@@ -39,6 +40,9 @@ const Projects = (props) => {
   }, []);
   return (
     <div className={styles.container}>
+        <Head>
+            <title>My project's page</title>
+        </Head>
       <header className={styles.header}>
         <Link href="/">
           <a>
