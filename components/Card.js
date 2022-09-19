@@ -5,15 +5,13 @@ const Card = ({ title, description, img }) => {
 
     
   return (
-    <div className={styles.container}>
-      <div className={styles.Card_image}>
+    <div className="rounded-xl bg-gren-100 border shadow-sm">
+      <div className="shrink-0 border-b rounded-t-xl">
           {/* <Image src={img} alt="Card Image"/> */}
-        <img src={img} alt="Card Image"/>
-        
-        {/* <h3>{title}</h3> */}
+        <img src={img} alt="Card Image" className="rounded-t-xl"/>
       </div>
-      <div className={styles.Card_body}>
-        <h3>{title}</h3>
+      <div className="p-3">
+        <h3 className="font-bold">{title}</h3>
         <p>{description}</p>
       </div>
     </div>

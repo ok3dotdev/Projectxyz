@@ -20,7 +20,7 @@ export async function getStaticProps(context) {
 }
 
 const Projects = (props) => {
-  const [mappedProjects, setMappedProjects] = useState("");
+  const [mappedProjects, setMappedProjects] = useState([]);
 
   useEffect(() => {
     const imgBuilder = imageUrlBuilder({
@@ -39,34 +39,64 @@ const Projects = (props) => {
     // console.log(mappedProjects)
   }, []);
   return (
-    <div className={styles.container}>
-        <Head>
+        <div className="">
+          <Head>
             <title>My project's page</title>
-        </Head>
-      <header className={styles.header}>
-        <Link href="/">
-          <a>
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              style={{ fontSize: "1.5rem" }}
+          </Head>
+          <nav className="flex p-3 items-stretch border-b">
+            <Link href="/">
+              <a  className="self-center">
+                <FontAwesomeIcon
+                  icon={faArrowLeft}
+                  style={{ fontSize: "1rem" }}
+                />
+              </a>
+            </Link>
+            <h3 className="ml-2 font-bold">Projects</h3>
+          </nav>
+          <main className="m-4 lg:m-8 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+           {mappedProjects?.map(({name, description, image}, id)=>{
+            return(
+              <Card
+              key={id}
+              title={name}
+              description={description}
+              img={image}
             />
-          </a>
-        </Link>
-        <h1>Projects</h1>
-      </header>
-      <main className={styles.content}>
-        {mappedProjects && mappedProjects.map((prj, idx) => {
-          return (
-            <Card
-              key={prj.name}
-              title={prj.name}
-              description={prj.description}
-              img={prj.image}
-            />
-          );
-        })}
-      </main>
-    </div>
+            )
+           })}
+          </main>
+
+          
+        </div>
+    // <div className={styles.container}>
+        // <Head>
+        //     <title>My project's page</title>
+        // </Head>
+    //   <header className={styles.header}>
+        // <Link href="/">
+        //   <a>
+        //     <FontAwesomeIcon
+        //       icon={faArrowLeft}
+        //       style={{ fontSize: "1.5rem" }}
+        //     />
+        //   </a>
+        // </Link>
+    //     <h1>Projects</h1>
+    //   </header>
+    //   <main className="mt-5 grid md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
+    //     {mappedProjects && mappedProjects.map((prj, idx) => {
+    //       return (
+    //         <Card
+    //           key={prj.name}
+    //           title={prj.name}
+    //           description={prj.description}
+    //           img={prj.image}
+    //         />
+    //       );
+    //     })}
+    //   </main>
+    // </div>
   );
 };
 

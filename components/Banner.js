@@ -1,7 +1,6 @@
 import Link from "next/link";
 import React from "react";
 import styles from "./Banner.module.css";
-import { Head } from "next/head";
 import {
     faLinkedin,
     faGithub,
@@ -15,7 +14,7 @@ const Banner = () => {
     return (
         <div>
             {/* <img className={styles.heroImg} src="/assets/banner.jpeg" alt="Hero Image"/> */}
-            <Image className={styles.heroImg} src="/assets/banner.jpeg" alt="Hero Image" width="50" height="50"/>
+            <Image className={styles.heroImg} src="/assets/avatar.jpg" alt="Hero Image" width="50" height="50"/>
             <h1 className={styles.title}>Hi, I'm Henry</h1>
             <p className={styles.description}>
                 A web-developer based in Toronto, Canada.
@@ -26,14 +25,14 @@ const Banner = () => {
                         <button className={styles.button}>📓 Blog</button>
                     </a>
                 </Link> */}
-                <Link href="/projects">
-                    <a>
-                        <button className={styles.button}>💼 Projetcs</button>
-                    </a>
-                </Link>
                 <Link href="/about">
                     <a>
-                        <button className={styles.button}>👋 About Me</button>
+                        <button className={styles.button}>👋🏾 About Me</button>
+                    </a>
+                </Link>
+                <Link href="/projects">
+                    <a>
+                        <button className={styles.button}>💼 Projects</button>
                     </a>
                 </Link>
                 <Link href="/contact">

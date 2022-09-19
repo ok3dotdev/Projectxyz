@@ -7,23 +7,23 @@ import Head from "next/head";
 
 const About = () => {
     return (
-        <div className={styles.container}>
+        <div>
             <Head>
                 <title>About me page</title>
             </Head>
-            <header className={styles.header}>
-                <Link href="/">
-                    <a>
-                        <FontAwesomeIcon
-                            icon={faArrowLeft}
-                            style={{ fontSize: "1.5rem" }}
-                        />
-                    </a>
-                </Link>
-                <h1>About Me</h1>
-            </header>
-            <main className={styles.content}>
-                <h2>Who am I?</h2>
+            <nav className="flex p-3 items-stretch border-b">
+            <Link href="/">
+              <a  className="self-center">
+                <FontAwesomeIcon
+                  icon={faArrowLeft}
+                  style={{ fontSize: "1rem" }}
+                />
+              </a>
+            </Link>
+            <h3 className="ml-2 font-bold">About me</h3>
+          </nav>
+            <main className="m-4 md:m-8">
+                <h1 className="mb-3 font-bold">Who am I?</h1>
                 <p>
                     My Name is Henry Oke - A web application developer based in
                     Toronto, Canada. I currently work as a Front-end Web
@@ -32,7 +32,7 @@ const About = () => {
                     articles with millions of users.
                 </p>
 
-                <h2>What I do?</h2>
+                <h2 className="font-bold mt-3 mb-3">What I do?</h2>
                 <p>
                     I work with Front-end technologies and libraries like
                     Javascript, React, and TypeScript to convert high-fidelity
@@ -43,7 +43,7 @@ const About = () => {
                     value in my work and to my clients.
                 </p>
                 <section className={styles.contact}>
-                    💡 Wanna get in Touch? You can contact me,
+                    💡 Wannt to get in Touch? You can reach me
                     <Link href="mailto:henryoke158@yahoo.com">
                         <a className={styles.contactLink}>here</a>
                     </Link>
