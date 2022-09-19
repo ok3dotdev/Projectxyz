@@ -6,12 +6,12 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import imageUrlBuilder from "@sanity/image-url";
 import { useEffect, useState } from "react";
 // import { sanityClient } from "../../lib/sanity-client/client";
-// import { getprojectsData } from "../../lib/projectsData";
+import { getprojectsData } from "../../lib/projectsData";
 import Head from "next/head";
-import { projectsData } from "../../data/index";
+// import { projectsData } from "../../data/index";
 
 export async function getStaticProps(context) {
-  // const projectsData = await getprojectsData(); 
+  const projectsData = await getprojectsData(); 
   return {
     props: {
       projects: projectsData,
@@ -55,7 +55,7 @@ const Projects = (props) => {
             <h3 className="ml-2 font-bold">Projects</h3>
           </nav>
           <main className="m-4 lg:m-8 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
-           {props.projects?.map(({name, description, image}, id)=>{
+           {mappedProjects?.map(({name, description, image}, id)=>{
             return(
               <Card
               key={id}
