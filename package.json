@@ -13,11 +13,13 @@
     "@fortawesome/free-brands-svg-icons": "^6.2.0",
     "@fortawesome/free-solid-svg-icons": "^6.2.0",
     "@fortawesome/react-fontawesome": "^0.2.0",
+    "@react-three/fiber": "^8.8.1",
     "@sanity/client": "^3.4.1",
     "@sanity/image-url": "^1.0.1",
     "next": "12.3.0",
     "react": "^18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "three": "^0.144.0"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.11",

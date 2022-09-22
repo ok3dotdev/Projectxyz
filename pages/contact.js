@@ -12,24 +12,25 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Contact = () => {
   return (
-    <div className={styles.container}>
+    <div className="">
         <Head>
             <title>Contact me page</title>
         </Head>
-      <header className={styles.header}>
-        <Link href="/">
-          <a>
-            <FontAwesomeIcon
-              icon={faArrowLeft}
-              style={{ fontSize: "1.8rem" }}
-            />
-          </a>
-        </Link>
-        <h1>Contact Me</h1>
-      </header>
-      <main className={styles.content}>
+        <nav className="flex p-3 items-stretch border-b">
+            <Link href="/">
+              <a  className="self-center">
+                <FontAwesomeIcon
+                  icon={faArrowLeft}
+                  style={{ fontSize: "1rem" }}
+                />
+              </a>
+            </Link>
+            <h3 className="ml-2 font-bold">Contact me</h3>
+          </nav>
+      <main className="m-4 md:m-8 ">
+        <div className="rounded-xl bg-green-200 p-8 max-w-xl mx-auto">
         <h2>💡 Hello There!</h2>
-        <section className={styles.contact}>
+        <section className="">
           <div className={styles.icons}>
             <Link href="https://www.linkedin.com/in/henry-oke/">
               <a>
@@ -65,12 +66,12 @@ const Contact = () => {
             </Link>
           </div>
         </section>
-        <div className={styles.text}>
-          <h3>
+          <p className="text-slate-500">
             If you want to report an issue on this site, please shoot me an
             e-mail by clicking on the icons above.
-          </h3>
+          </p>
         </div>
+        
       </main>
     </div>
   );

@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import styles from "../styles/About.module.css";
 
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
@@ -22,9 +23,12 @@ const About = () => {
             </Link>
             <h3 className="ml-2 font-bold">About me</h3>
           </nav>
-            <main className="m-4 md:m-8">
-                <h1 className="mb-3 font-bold">Who am I?</h1>
-                <p>
+            <main className="flex-col items-center mt-8 mx-6 lg:max-w-2xl lg:mx-auto w-100">
+                <div className="flex justify-center mb-5">
+                    <Image className="rounded-xl" src="/assets/potrait.jpg" layout="intrinsic" width={150} height={150}/>
+                </div>
+                <h1 className="mb-5 font-bold">Who am I?</h1>
+                <p className="text-gray-800">
                     My Name is Henry Oke - A web application developer based in
                     Toronto, Canada. I currently work as a Front-end Web
                     Developer for an online science article publication firm. I
@@ -33,7 +37,7 @@ const About = () => {
                 </p>
 
                 <h2 className="font-bold mt-3 mb-3">What I do?</h2>
-                <p>
+                <p className="text-gray-800">
                     I work with Front-end technologies and libraries like
                     Javascript, React, and TypeScript to convert high-fidelity
                     design mockups to interactive websites or web applications
@@ -43,7 +47,7 @@ const About = () => {
                     value in my work and to my clients.
                 </p>
                 <section className={styles.contact}>
-                    💡 Wannt to get in Touch? You can reach me
+                    📞 Wannt to get in Touch? You can reach me
                     <Link href="mailto:henryoke158@yahoo.com">
                         <a className={styles.contactLink}>here</a>
                     </Link>

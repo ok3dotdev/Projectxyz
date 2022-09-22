@@ -54,7 +54,7 @@ const Projects = (props) => {
             </Link>
             <h3 className="ml-2 font-bold">Projects</h3>
           </nav>
-          <main className="m-4 lg:m-8 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-3">
+          <main className="m-4 lg:m-8 grid sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-3">
            {mappedProjects?.map(({name, description, image}, id)=>{
             return(
               <Card
