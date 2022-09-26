@@ -28,9 +28,9 @@ const Contact = () => {
             <h3 className="ml-2 font-bold">Contact me</h3>
           </nav>
       <main className="m-4 md:m-8 ">
-        <div className="rounded-xl bg-green-200 p-8 max-w-xl mx-auto">
-        <h2>💡 Hello There!</h2>
-        <section className="">
+        <div className="rounded-xl bg-green-200 p-4 max-w-xl mx-auto">
+        <h2 className="font-bold text-lg">You can reach me here!</h2>
+        <section className="w-full my-5">
           <div className={styles.icons}>
             <Link href="https://www.linkedin.com/in/henry-oke/">
               <a>

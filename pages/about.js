@@ -23,9 +23,9 @@ const About = () => {
             </Link>
             <h3 className="ml-2 font-bold">About me</h3>
           </nav>
-            <main className="flex-col items-center mt-8 mx-6 lg:max-w-2xl lg:mx-auto w-100">
+            <main className="flex-col items-center mt-8 mx-6 lg:max-w-2xl lg:mx-auto w-100 h-[100vh] py-8">
                 <div className="flex justify-center mb-5">
-                    <Image priority className="rounded-xl" src="/assets/potrait.jpg" layout="intrinsic" width={150} height={150}/>
+                    <Image priority className="rounded-xl" src="/assets/potrait.jpg" width={200} height={200}/>
                 </div>
                 <h1 className="mb-5 font-bold">Who am I?</h1>
                 <p className="text-gray-800">
