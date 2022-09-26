@@ -15,9 +15,9 @@ const Banner = () => {
         <div>
             {/* <img className={styles.heroImg} src="/assets/banner.jpeg" alt="Hero Image"/> */}
             <Image className={styles.heroImg} src="/assets/avatar.jpg" alt="Hero Image" width="50" height="50"/>
-            <h1 className={styles.title}>Hi, I'm Henry</h1>
+            <h1 className={styles.title}>Hello, I'm Henry</h1>
             <p className={styles.description}>
-                A web-developer based in Toronto, Canada.
+                welcome to my space on the web.
             </p>
             <div className={styles.button__container}>
                 {/* <Link href="/blog">
@@ -32,12 +32,12 @@ const Banner = () => {
                 </Link>
                 <Link href="/projects">
                     <a>
-                        <button className={styles.button}>💼 Projects</button>
+                        <button className={styles.button}>💼 Projects i've worked on</button>
                     </a>
                 </Link>
                 <Link href="/contact">
                     <a>
-                        <button className={styles.button}>💌 Contact</button>
+                        <button className={styles.button}>💌 How to reach me</button>
                     </a>
                 </Link>
             </div>

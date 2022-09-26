@@ -18,7 +18,7 @@ const App = ({ Component, pageProps }) => {
     }, [router.events])
   
     return (
-      <>
+      <div className="h-full">
         {/* Global Site Tag (gtag.js) - Google Analytics */}
         <Script
           strategy="afterInteractive"
@@ -39,7 +39,7 @@ const App = ({ Component, pageProps }) => {
           }}
         />
         <Component {...pageProps} />
-      </>
+      </div>
     )
   }
 

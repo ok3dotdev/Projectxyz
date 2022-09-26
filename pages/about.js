@@ -25,7 +25,7 @@ const About = () => {
           </nav>
             <main className="flex-col items-center mt-8 mx-6 lg:max-w-2xl lg:mx-auto w-100">
                 <div className="flex justify-center mb-5">
-                    <Image className="rounded-xl" src="/assets/potrait.jpg" layout="intrinsic" width={150} height={150}/>
+                    <Image priority className="rounded-xl" src="/assets/potrait.jpg" layout="intrinsic" width={150} height={150}/>
                 </div>
                 <h1 className="mb-5 font-bold">Who am I?</h1>
                 <p className="text-gray-800">
